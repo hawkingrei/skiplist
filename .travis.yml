@@ -12,4 +12,5 @@ install:
   - go env
 script:
   - go test -v ./...
-
+after_success:
+  - go test -benchmem -run=^$ -bench ./...
