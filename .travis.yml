@@ -5,6 +5,8 @@ go:
   - 1.9.x
 sudo: required
 
+before_script:
+  - go get -v ./...
 install:
   - go env
 script:
