@@ -6,6 +6,7 @@ go:
 sudo: required
 
 before_script:
+  - go get github.com/stretchr/testify/require
   - go get -v ./...
 install:
   - go env
